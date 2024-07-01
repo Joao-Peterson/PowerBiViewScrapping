@@ -1,0 +1,2933 @@
+{
+  "jobIds": [
+    "b74c01a1-3ec0-46d1-b509-9fc127f83fcf"
+  ],
+  "results": [
+    {
+      "jobId": "b74c01a1-3ec0-46d1-b509-9fc127f83fcf",
+      "result": {
+        "data": {
+          "timestamp": "2024-07-01T18:41:22.402Z",
+          "rootActivityId": "a6b10db0-4436-4966-9e53-c8b03d15bfa7",
+          "descriptor": {
+            "Select": [
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G0",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "Consulta1",
+                      "Property": "NOMEINSTITUICAOLIDER"
+                    },
+                    "Calc": "G0",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Consulta1.NOMEINSTITUICAOLIDER"
+              },
+              {
+                "Kind": 1,
+                "Depth": 1,
+                "Value": "G1",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "Consulta1",
+                      "Property": "NOMEINSTITUICAO"
+                    },
+                    "Calc": "G1",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Consulta1.NOMEINSTITUICAO"
+              },
+              {
+                "Kind": 2,
+                "Value": "M0",
+                "Subtotal": [
+                  "A0",
+                  "A1"
+                ],
+                "Name": "Min(Planilha1.Link)"
+              }
+            ],
+            "Expressions": {
+              "Primary": {
+                "Groupings": [
+                  {
+                    "Keys": [
+                      {
+                        "Source": {
+                          "Entity": "Consulta1",
+                          "Property": "NOMEINSTITUICAOLIDER"
+                        },
+                        "Select": 0
+                      }
+                    ],
+                    "Member": "DM1",
+                    "SubtotalMember": "DM0"
+                  },
+                  {
+                    "Keys": [
+                      {
+                        "Source": {
+                          "Entity": "Consulta1",
+                          "Property": "NOMEINSTITUICAO"
+                        },
+                        "Select": 1
+                      }
+                    ],
+                    "Member": "DM3",
+                    "SubtotalMember": "DM2"
+                  }
+                ]
+              }
+            },
+            "Version": 2
+          },
+          "metrics": {
+            "Version": "1.0.0",
+            "Events": [
+              {
+                "Id": "c63ac83b-ae9c-48cf-9b88-7b99a6577c25",
+                "Name": "Execute Semantic Query",
+                "Component": "DSE",
+                "Start": "2024-07-01T18:41:22.402939Z",
+                "End": "2024-07-01T18:41:22.4654351Z"
+              },
+              {
+                "Id": "33eb1fa2-5f68-4b22-8229-a237941a23f2",
+                "ParentId": "c63ac83b-ae9c-48cf-9b88-7b99a6577c25",
+                "Name": "Execute DAX Query",
+                "Component": "DSE",
+                "Start": "2024-07-01T18:41:22.418559Z",
+                "End": "2024-07-01T18:41:22.4498157Z",
+                "Metrics": {
+                  "RowCount": 263
+                }
+              },
+              {
+                "Id": "5EC529F7-9356-464D-8FF8-1B9177C859A3",
+                "ParentId": "33eb1fa2-5f68-4b22-8229-a237941a23f2",
+                "Name": "Execute Query",
+                "Component": "AS",
+                "Start": "2024-07-01T18:41:22.44Z",
+                "End": "2024-07-01T18:41:22.453Z"
+              },
+              {
+                "Id": "83ECA34D-0057-4678-9829-998881F98DAE",
+                "ParentId": "5EC529F7-9356-464D-8FF8-1B9177C859A3",
+                "Name": "Serialize Rowset",
+                "Component": "AS",
+                "Start": "2024-07-01T18:41:22.453Z",
+                "End": "2024-07-01T18:41:22.453Z"
+              }
+            ]
+          },
+          "fromCache": false,
+          "dsr": {
+            "Version": 2,
+            "MinorVersion": 1,
+            "DS": [
+              {
+                "N": "DS0",
+                "PH": [
+                  {
+                    "DM1": [
+                      {
+                        "RF": 1,
+                        "S": [
+                          {
+                            "N": "G0",
+                            "T": 1
+                          }
+                        ],
+                        "G0": "BMW FINANCEIRA S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM3": [
+                              {
+                                "RF": 1,
+                                "S": [
+                                  {
+                                    "N": "G1",
+                                    "T": 1,
+                                    "DN": "D0"
+                                  },
+                                  {
+                                    "N": "M0",
+                                    "T": 1,
+                                    "DN": "D1"
+                                  }
+                                ],
+                                "C": [
+                                  0,
+                                  0
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "BNY MELLON BANCO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "S": [
+                                  {
+                                    "N": "A1",
+                                    "T": 1,
+                                    "DN": "D2"
+                                  }
+                                ],
+                                "A1": 0
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  1,
+                                  1
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  2,
+                                  2
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "BRB - BANCO DE BRASILIA S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  3,
+                                  3
+                                ]
+                              },
+                              {
+                                "C": [
+                                  4,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "BRB - CREDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "R": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  3,
+                                  3
+                                ]
+                              },
+                              {
+                                "C": [
+                                  4,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CAIXA ECONOMICA FEDERAL",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 3
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  5,
+                                  5
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CALCRED S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 4
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  6,
+                                  6
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 5
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  7,
+                                  7
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CCB BRASIL S.A. - CRÉDITO, FINANCIAMENTOS E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 6
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  8,
+                                  8
+                                ]
+                              },
+                              {
+                                "C": [
+                                  9,
+                                  9
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CENTROCRED S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 7
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  10,
+                                  10
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CHINA CONSTRUCTION BANK (BRASIL) BANCO MÚLTIPLO S/A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 6
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  8,
+                                  8
+                                ]
+                              },
+                              {
+                                "C": [
+                                  9,
+                                  9
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CITIBANK N.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  11,
+                                  11
+                                ]
+                              },
+                              {
+                                "C": [
+                                  12,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "COBANSA COMPANHIA HIPOTECARIA",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "R": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  13
+                                ],
+                                "R": 2
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "COBUCCIO S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 8
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  14,
+                                  12
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "COMPANHIA HIPOTECÁRIA PIRATINI - CHP",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 9
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  15,
+                                  13
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CREDIARE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 10
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  16,
+                                  14
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CREDITÁ S/A CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 11
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  17,
+                                  15
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CREDITAQUI FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 12
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  18,
+                                  16
+                                ]
+                              },
+                              {
+                                "C": [
+                                  19,
+                                  17
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "CREFISA S.A.-CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 13
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  20,
+                                  18
+                                ]
+                              },
+                              {
+                                "C": [
+                                  21
+                                ],
+                                "R": 2
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DAYCOVAL LEASING - BANCO MÚLTIPLO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 14
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  22,
+                                  19
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DELFIN RIO S/A CREDITO IMOBILIARIO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  23,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DELFIN S.A. - CREDITO IMOBILIARIO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "R": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  24
+                                ],
+                                "R": 2
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DEUTSCHE BANK S.A. - BANCO ALEMAO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 15
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  25,
+                                  20
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DEUTSCHE SPARKASSEN LEASING DO BRASIL BANCO MÚLTIPLO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 16
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  26,
+                                  21
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DIRECAO S.A. CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  27,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DM FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 17
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  28,
+                                  22
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "DUFRIO FINANCEIRA, CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 18
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  29,
+                                  23
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "ECONOMISA COMPANHIA HIPOTECÁRIA.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  30,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "FACTA FINANCEIRA S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 19
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  31,
+                                  24
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "FAMÍLIA PAULISTA COMPANHIA HIPOTECÁRIA",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 20
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  32,
+                                  25
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "FINAMAX S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 21
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  33,
+                                  26
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "FINANCEIRA ALFA S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 22
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  34,
+                                  27
+                                ]
+                              },
+                              {
+                                "C": [
+                                  35,
+                                  28
+                                ]
+                              },
+                              {
+                                "C": [
+                                  36,
+                                  29
+                                ]
+                              },
+                              {
+                                "C": [
+                                  37,
+                                  30
+                                ]
+                              },
+                              {
+                                "C": [
+                                  38,
+                                  27
+                                ]
+                              },
+                              {
+                                "C": [
+                                  39,
+                                  29
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "FINANCEIRA ITAÚ CBD S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  40,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  41,
+                                  32
+                                ]
+                              },
+                              {
+                                "C": [
+                                  42,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  43
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  44
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  45,
+                                  33
+                                ]
+                              },
+                              {
+                                "C": [
+                                  46,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  47,
+                                  34
+                                ]
+                              },
+                              {
+                                "C": [
+                                  48,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  49,
+                                  35
+                                ]
+                              },
+                              {
+                                "C": [
+                                  50,
+                                  31
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "GAZINCRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 23
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  51,
+                                  36
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "GOLCRED S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 24
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  52,
+                                  37
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 25
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  53,
+                                  38
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "GRAZZIOTIN FINANCEIRA S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 26
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  54,
+                                  39
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "HAITONG BANCO DE INVESTIMENTO DO BRASIL S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 27
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  55,
+                                  40
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "HIPERCARD BANCO MÚLTIPLO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  40,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  41,
+                                  32
+                                ]
+                              },
+                              {
+                                "C": [
+                                  42,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  43
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  44
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  45,
+                                  33
+                                ]
+                              },
+                              {
+                                "C": [
+                                  46,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  47,
+                                  34
+                                ]
+                              },
+                              {
+                                "C": [
+                                  48,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  49,
+                                  35
+                                ]
+                              },
+                              {
+                                "C": [
+                                  50,
+                                  31
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 28
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  56,
+                                  41
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "ICBC DO BRASIL BANCO MÚLTIPLO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 29
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  57,
+                                  42
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "INTESA SANPAOLO BRASIL S.A. - BANCO MÚLTIPLO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 30
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  58,
+                                  43
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "ITAÚ UNIBANCO HOLDING S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  40,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  41,
+                                  32
+                                ]
+                              },
+                              {
+                                "C": [
+                                  42,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  43
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  44
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  45,
+                                  33
+                                ]
+                              },
+                              {
+                                "C": [
+                                  46,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  47,
+                                  34
+                                ]
+                              },
+                              {
+                                "C": [
+                                  48,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  49,
+                                  35
+                                ]
+                              },
+                              {
+                                "C": [
+                                  50,
+                                  31
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "ITAÚ UNIBANCO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "R": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  40
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  41,
+                                  32
+                                ]
+                              },
+                              {
+                                "C": [
+                                  42,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  43
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  44
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  45,
+                                  33
+                                ]
+                              },
+                              {
+                                "C": [
+                                  46,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  47,
+                                  34
+                                ]
+                              },
+                              {
+                                "C": [
+                                  48,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  49,
+                                  35
+                                ]
+                              },
+                              {
+                                "C": [
+                                  50,
+                                  31
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "JBCRED S.A. SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 31
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  59,
+                                  44
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 32
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  60,
+                                  45
+                                ]
+                              },
+                              {
+                                "C": [
+                                  61,
+                                  46
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "KIRTON BANK S.A. - BANCO MÚLTIPLO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  62,
+                                  47
+                                ]
+                              },
+                              {
+                                "C": [
+                                  63,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  64
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  65,
+                                  48
+                                ]
+                              },
+                              {
+                                "C": [
+                                  66,
+                                  49
+                                ]
+                              },
+                              {
+                                "C": [
+                                  67,
+                                  50
+                                ]
+                              },
+                              {
+                                "C": [
+                                  68,
+                                  51
+                                ]
+                              },
+                              {
+                                "C": [
+                                  69,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "KREDILIG S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 33
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  70,
+                                  52
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "LEBES FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 34
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  71,
+                                  53
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "LECCA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 35
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  72,
+                                  54
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "LUIZACRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  40,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  41,
+                                  32
+                                ]
+                              },
+                              {
+                                "C": [
+                                  42,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  43
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  44
+                                ],
+                                "R": 2
+                              },
+                              {
+                                "C": [
+                                  45,
+                                  33
+                                ]
+                              },
+                              {
+                                "C": [
+                                  46,
+                                  31
+                                ]
+                              },
+                              {
+                                "C": [
+                                  47,
+                                  34
+                                ]
+                              },
+                              {
+                                "C": [
+                                  48,
+                                  4
+                                ]
+                              },
+                              {
+                                "C": [
+                                  49,
+                                  35
+                                ]
+                              },
+                              {
+                                "C": [
+                                  50,
+                                  31
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "M PAGAMENTOS S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 36
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  73,
+                                  55
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "MERCADO CRÉDITO SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 37
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  74,
+                                  56
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "MIDWAY S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 38
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  75,
+                                  57
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "NEGRESCO S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 39
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  76,
+                                  58
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "NEON FINANCEIRA - CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 40
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  77,
+                                  59
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "NOVO BANCO CONTINENTAL S.A. - BANCO MÚLTIPLO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 41
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  78,
+                                  60
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "NU FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 42
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  79,
+                                  61
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "OMNI BANCO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 43
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  80,
+                                  62
+                                ]
+                              },
+                              {
+                                "C": [
+                                  81,
+                                  63
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "OMNI S.A. - CREDITO FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "R": 1
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  80,
+                                  62
+                                ]
+                              },
+                              {
+                                "C": [
+                                  81,
+                                  63
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PAN FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  82,
+                                  64
+                                ]
+                              },
+                              {
+                                "C": [
+                                  83,
+                                  65
+                                ]
+                              },
+                              {
+                                "C": [
+                                  84,
+                                  64
+                                ]
+                              },
+                              {
+                                "C": [
+                                  85,
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PARANÁ BANCO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 44
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  86,
+                                  66
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 45
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  87,
+                                  67
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 46
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  88,
+                                  68
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 47
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  89,
+                                  69
+                                ]
+                              },
+                              {
+                                "C": [
+                                  90
+                                ],
+                                "R": 2
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PINTOS S.A. CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 48
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  91,
+                                  70
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PLANTAE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 49
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  92,
+                                  71
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "PORTOSEG S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 50
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  93,
+                                  72
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "QISTA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 51
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  94,
+                                  73
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "REALIZE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 52
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  95,
+                                  74
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "RPW S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 53
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  96,
+                                  75
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SAFRA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 22
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  34,
+                                  27
+                                ]
+                              },
+                              {
+                                "C": [
+                                  35,
+                                  28
+                                ]
+                              },
+                              {
+                                "C": [
+                                  36,
+                                  29
+                                ]
+                              },
+                              {
+                                "C": [
+                                  37,
+                                  30
+                                ]
+                              },
+                              {
+                                "C": [
+                                  38,
+                                  27
+                                ]
+                              },
+                              {
+                                "C": [
+                                  39,
+                                  29
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SANTINVEST S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 54
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  97,
+                                  76
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SCANIA BANCO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 55
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  98,
+                                  77
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SCOTIABANK BRASIL S.A. BANCO MÚLTIPLO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 56
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  99,
+                                  78
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SF3 CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 57
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SF3 CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                                  79
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SIMPALA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SIMPALA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SINOSSERRA FINANCEIRA S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 58
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SINOSSERRA FINANCEIRA S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  80
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SOCIAL BANK BANCO MÚLTIPLO S/A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 59
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SOCIAL BANK BANCO MÚLTIPLO S/A",
+                                  81
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO EFÍ S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO EFÍ S.A.",
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SOCINAL S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 60
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "SOCINAL S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  82
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "SOFISA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "BANCO SOFISA S.A.",
+                                  83
+                                ]
+                              },
+                              {
+                                "C": [
+                                  "SOFISA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "STARA FINANCEIRA S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 61
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "STARA FINANCEIRA S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                                  84
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "STATE STREET BRASIL S.A. - BANCO COMERCIAL",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 2
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "STATE STREET BRASIL S.A. - BANCO COMERCIAL",
+                                  4
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "STONE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 62
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "STONE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                                  85
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "TENTOS S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 63
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "TENTOS S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  86
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "TODESCREDI S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 64
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "TODESCREDI S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  87
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "UBS BRASIL BANCO DE INVESTIMENTO S.A.",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 65
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "UBS BRASIL BANCO DE INVESTIMENTO S.A.",
+                                  88
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "VIA CERTA FINANCIADORA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 66
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "VIA CERTA FINANCIADORA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                                  89
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "WILL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 67
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "WILL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                                  90
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "G0": "ZEMA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                        "M": [
+                          {
+                            "DM2": [
+                              {
+                                "A1": 68
+                              }
+                            ]
+                          },
+                          {
+                            "DM3": [
+                              {
+                                "C": [
+                                  "ZEMA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                                  91
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "IC": true,
+                "ValueDicts": {
+                  "D0": [
+                    "BMW FINANCEIRA S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BNY MELLON BANCO S.A.",
+                    "BR PARTNERS BANCO DE INVESTIMENTO S.A.",
+                    "BRB - BANCO DE BRASILIA S.A.",
+                    "BRB - CREDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                    "CAIXA ECONOMICA FEDERAL",
+                    "CALCRED S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "CCB BRASIL S.A. - CRÉDITO, FINANCIAMENTOS E INVESTIMENTOS",
+                    "CHINA CONSTRUCTION BANK (BRASIL) BANCO MÚLTIPLO S/A",
+                    "CENTROCRED S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "BANCO CITIBANK S.A.",
+                    "CITIBANK N.A.",
+                    "COBANSA COMPANHIA HIPOTECARIA",
+                    "COBUCCIO S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "COMPANHIA HIPOTECÁRIA PIRATINI - CHP",
+                    "CREDIARE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "CREDITÁ S/A CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO MERCANTIL DE INVESTIMENTOS S/A",
+                    "CREDITAQUI FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO CREFISA S.A.",
+                    "CREFISA S.A.-CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "BANCO DAYCOVAL S.A.",
+                    "DELFIN RIO S/A CREDITO IMOBILIARIO",
+                    "DELFIN S.A. - CREDITO IMOBILIARIO",
+                    "DEUTSCHE BANK S.A. - BANCO ALEMAO",
+                    "DEUTSCHE SPARKASSEN LEASING DO BRASIL BANCO MÚLTIPLO S.A.",
+                    "DIRECAO S.A. CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "DM FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "DUFRIO FINANCEIRA, CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S.A.",
+                    "ECONOMISA COMPANHIA HIPOTECÁRIA.",
+                    "FACTA FINANCEIRA S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                    "FAMÍLIA PAULISTA COMPANHIA HIPOTECÁRIA",
+                    "FINAMAX S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO ALFA DE INVESTIMENTO S.A.",
+                    "BANCO ALFA S.A.",
+                    "BANCO J. SAFRA S.A.",
+                    "BANCO SAFRA S.A.",
+                    "FINANCEIRA ALFA S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "SAFRA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                    "BANCO INVESTCRED UNIBANCO S.A.",
+                    "BANCO ITAÚ BBA S.A.",
+                    "BANCO ITAÚ CONSIGNADO S.A.",
+                    "BANCO ITAÚ VEÍCULOS S.A.",
+                    "BANCO ITAUBANK S.A.",
+                    "BANCO ITAUCARD S.A.",
+                    "FINANCEIRA ITAÚ CBD S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "HIPERCARD BANCO MÚLTIPLO S.A.",
+                    "ITAÚ UNIBANCO HOLDING S.A.",
+                    "ITAÚ UNIBANCO S.A.",
+                    "LUIZACRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "GAZINCRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "GOLCRED S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A.",
+                    "GRAZZIOTIN FINANCEIRA S/A - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "HAITONG BANCO DE INVESTIMENTO DO BRASIL S.A.",
+                    "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "ICBC DO BRASIL BANCO MÚLTIPLO S.A.",
+                    "INTESA SANPAOLO BRASIL S.A. - BANCO MÚLTIPLO",
+                    "JBCRED S.A. SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO J.P. MORGAN S.A.",
+                    "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",
+                    "BANCO BRADESCARD S.A.",
+                    "BANCO BRADESCO BBI S.A.",
+                    "BANCO BRADESCO BERJ S.A.",
+                    "BANCO BRADESCO FINANCIAMENTOS S.A.",
+                    "BANCO BRADESCO S.A.",
+                    "BANCO DIGIO S.A.",
+                    "BANCO LOSANGO S.A. - BANCO MÚLTIPLO",
+                    "KIRTON BANK S.A. - BANCO MÚLTIPLO",
+                    "KREDILIG S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "LEBES FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "LECCA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+                    "M PAGAMENTOS S.A. - CRÉDITO FINANCIAMENTO E INVESTIMENTO",
+                    "MERCADO CRÉDITO SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                    "MIDWAY S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "NEGRESCO S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "NEON FINANCEIRA - CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                    "NOVO BANCO CONTINENTAL S.A. - BANCO MÚLTIPLO",
+                    "NU FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "OMNI BANCO S.A.",
+                    "OMNI S.A. - CREDITO FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO BTG PACTUAL S.A.",
+                    "BANCO PAN S.A.",
+                    "BANCO SISTEMA S.A.",
+                    "PAN FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "PARANÁ BANCO S.A.",
+                    "PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                    "PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "BANCO ORIGINAL S.A.",
+                    "PICPAY BANK - BANCO MÚLTIPLO S.A",
+                    "PINTOS S.A. CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "PLANTAE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "PORTOSEG S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "QISTA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "REALIZE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+                    "RPW S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+                    "SANTINVEST S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+                    "SCANIA BANCO S.A.",
+                    "SCOTIABANK BRASIL S.A. BANCO MÚLTIPLO"
+                  ],
+                  "D1": [
+                    "https://www.bancobmw.com.br",
+                    "https://www.bnymellon.com.br",
+                    "https://www.brap.com.br/br/",
+                    "https://www.brb.com.br/",
+                    "https://",
+                    "https://www.caixa.gov.br/",
+                    "https://www.calcred.com.br",
+                    "https://www.caruanafinanceira.com.br/",
+                    "https://ccbfinanceira.com.br/",
+                    "https://www.ccb.com/en/home/index.html",
+                    "https://centrocredfinanceira.com.br",
+                    "https://www.citibank.com/brasil",
+                    "https://www.grupoadrianocobuccio.com.br",
+                    "https://www.chphipotecaria.com.br",
+                    "https://www.crediare.com.br",
+                    "https://www.creditasa.com.br",
+                    "https://www.mercantil.com.br/",
+                    "https://www.mercantildobrasil.com.br",
+                    "https://www.crefisa.com.br",
+                    "https://www.daycoval.com.br",
+                    "https://www.deutsche-bank.com.br/",
+                    "https://www.deutsche-leasing.com/en/company/international/brazil",
+                    "https://www.finansinos.com.br/",
+                    "https://www.dufriofinanceira.com.br",
+                    "https://www.factafinanceira.com.br",
+                    "https://www.familiapaulista.com.br",
+                    "https://www.finamax.com.br/",
+                    "https://www.alfanet.com.br/",
+                    "https://www.bancoalfa.com.br/",
+                    "https://www.safra.com.br",
+                    "https://www.safra.com.br/",
+                    "https://www.itau.com.br",
+                    "https://www.bba.com.br/",
+                    "https://www.itaucard.com.br",
+                    "https://hipercard.com.br",
+                    "https://www.itau.com.br/",
+                    "https://www.gazincred.com.br/",
+                    "https://www.golcred.com.br",
+                    "https://www.gs.com",
+                    "https://www.grazziotin.com.br/",
+                    "https://www.haitongib.com.br",
+                    "https://www.herval.com.br/",
+                    "https://www.icbc-ltd.com/ICBCLtd/en/",
+                    "https://www.intesasanpaolo.com",
+                    "https://www.jbcred.com.br",
+                    "https://www.jpmorgan.com.br/",
+                    "https://www.jpmorgan.com/country/BR/PT",
+                    "https://www.bradescard.com.br",
+                    "https://www.financiamentos.bradesco",
+                    "https://www.bradesco.com.br/",
+                    "https://www.bancodigio.com.br",
+                    "https://www.losango.com.br",
+                    "https://www.kredilig.com.br",
+                    "https://www.lebesfinanceira.com.br",
+                    "https://www.lecca.com.br",
+                    "https://www.saxfinanceira.com.br",
+                    "https://www.mercadopago.com.br",
+                    "https://www.midwayfinanceira.com.br/",
+                    "https://www.credipar.com.br",
+                    "https://www.biorcfinanceira.com.br",
+                    "https://www.nbcbank.com.br",
+                    "https://nubank.com.br",
+                    "https://www.omni.com.br/para_empresa_omnibanco",
+                    "https://www.omni.com.br/",
+                    "https://www.btgpactual.com",
+                    "https://www.bancopan.com.br",
+                    "https://www.paranabanco.com.br/",
+                    "https://parati-cfi.com.br",
+                    "https://www.pernambucanas.com.br/",
+                    "https://www.original.com.br",
+                    "https://www.pincred.com.br",
+                    "https://www.plantaeagrocredito.com.br/",
+                    "https://www.portoseguro.com.br",
+                    "https://www.focusfinanceira.com.br",
+                    "https://www.realizesolucoesfinanceiras.com.br",
+                    "https://www.emprestacapital.com.br",
+                    "https://www.santinvest.com.br/",
+                    "https://www.scaniabanco.com.br",
+                    "https://www.br.scotiabank.com",
+                    "https://www.santanafinanceira.com.br",
+                    "https://www.sinosserrafinanceira.com.br",
+                    "https://www.bancocapital.com.br/",
+                    "https://www.socinal.com.br/",
+                    "https://www.sofisa.com.br/",
+                    "https://www.starafinanceira.com.br/",
+                    "https://www.stone.com.br/",
+                    "https://www.tentoscap.com.br",
+                    "https://www.todescredi.com.br",
+                    "https://www.ubs.com",
+                    "https://www.viacertafinanciadora.com.br/",
+                    "https://www.willfinanceira.com.br",
+                    "https://www.zemafinanceira.com"
+                  ],
+                  "D2": [
+                    "https://www.bnymellon.com.br",
+                    "https://www.brap.com.br/br/",
+                    "https://",
+                    "https://www.caixa.gov.br/",
+                    "https://www.calcred.com.br",
+                    "https://www.caruanafinanceira.com.br/",
+                    "https://ccbfinanceira.com.br/",
+                    "https://centrocredfinanceira.com.br",
+                    "https://www.grupoadrianocobuccio.com.br",
+                    "https://www.chphipotecaria.com.br",
+                    "https://www.crediare.com.br",
+                    "https://www.creditasa.com.br",
+                    "https://www.mercantil.com.br/",
+                    "https://www.crefisa.com.br",
+                    "https://www.daycoval.com.br",
+                    "https://www.deutsche-bank.com.br/",
+                    "https://www.deutsche-leasing.com/en/company/international/brazil",
+                    "https://www.finansinos.com.br/",
+                    "https://www.dufriofinanceira.com.br",
+                    "https://www.factafinanceira.com.br",
+                    "https://www.familiapaulista.com.br",
+                    "https://www.finamax.com.br/",
+                    "https://www.alfanet.com.br/",
+                    "https://www.gazincred.com.br/",
+                    "https://www.golcred.com.br",
+                    "https://www.gs.com",
+                    "https://www.grazziotin.com.br/",
+                    "https://www.haitongib.com.br",
+                    "https://www.herval.com.br/",
+                    "https://www.icbc-ltd.com/ICBCLtd/en/",
+                    "https://www.intesasanpaolo.com",
+                    "https://www.jbcred.com.br",
+                    "https://www.jpmorgan.com.br/",
+                    "https://www.kredilig.com.br",
+                    "https://www.lebesfinanceira.com.br",
+                    "https://www.lecca.com.br",
+                    "https://www.saxfinanceira.com.br",
+                    "https://www.mercadopago.com.br",
+                    "https://www.midwayfinanceira.com.br/",
+                    "https://www.credipar.com.br",
+                    "https://www.biorcfinanceira.com.br",
+                    "https://www.nbcbank.com.br",
+                    "https://nubank.com.br",
+                    "https://www.omni.com.br/",
+                    "https://www.paranabanco.com.br/",
+                    "https://parati-cfi.com.br",
+                    "https://www.pernambucanas.com.br/",
+                    "https://www.original.com.br",
+                    "https://www.pincred.com.br",
+                    "https://www.plantaeagrocredito.com.br/",
+                    "https://www.portoseguro.com.br",
+                    "https://www.focusfinanceira.com.br",
+                    "https://www.realizesolucoesfinanceiras.com.br",
+                    "https://www.emprestacapital.com.br",
+                    "https://www.santinvest.com.br/",
+                    "https://www.scaniabanco.com.br",
+                    "https://www.br.scotiabank.com",
+                    "https://www.santanafinanceira.com.br",
+                    "https://www.sinosserrafinanceira.com.br",
+                    "https://www.bancocapital.com.br/",
+                    "https://www.socinal.com.br/",
+                    "https://www.starafinanceira.com.br/",
+                    "https://www.stone.com.br/",
+                    "https://www.tentoscap.com.br",
+                    "https://www.todescredi.com.br",
+                    "https://www.ubs.com",
+                    "https://www.viacertafinanciadora.com.br/",
+                    "https://www.willfinanceira.com.br",
+                    "https://www.zemafinanceira.com"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
